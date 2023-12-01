@@ -80,6 +80,8 @@ header h1 {
 .formulario .campo {
     display: grid;
     margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario label {
@@ -149,7 +151,7 @@ header h1 {
 }
 
 .contenedor {
-    width: 90%;
+    width: 95%;
     max-width: 80rem;
     margin: 0 auto;
 }
@@ -333,6 +335,7 @@ main {
     cursor: pointer;
 }
 
+
 .modal {
     position: absolute;
     background-color: rgb(0 0 0 / 0.92);
@@ -341,24 +344,28 @@ main {
     right: 0;
     bottom: 0;
 }
+
 .modal .cerrar-modal {
     position: absolute;
     right: 3rem;
     top: 3rem;
     width: 3rem;
     height: 3rem;
+    z-index: 100;
 }
+
+
 .modal .cerrar-modal img {
     width: 100%;
 }
 
 .modal .formulario {
-    max-width: 80rem;
-    width: 40rem;
+    max-width: 70rem;
     transition-property: all;
     transition-duration: 300ms;
     transition-timing-function: ease-in;
     opacity: 0;
+    
 }
 .modal label {
     color: var(--blanco);
@@ -374,6 +381,7 @@ body .modal {
 
 .modal .formulario.cerrar {
     opacity: 0;
+
 }
 
 .modal label {
